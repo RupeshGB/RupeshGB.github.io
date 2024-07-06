@@ -1,56 +1,83 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    color: #333;
 }
 
 header {
-    background: #333;
-    color: #fff;
+    background: #f8f9fa;
     padding: 1rem 0;
-    text-align: center;
+    border-bottom: 1px solid #e7e7e7;
 }
 
-header h1 {
-    margin: 0;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 nav ul {
     list-style: none;
+    display: flex;
+    margin: 0;
     padding: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 10px;
+    margin-left: 20px;
 }
 
 nav ul li a {
-    color: #fff;
     text-decoration: none;
+    color: #333;
+    font-weight: bold;
 }
 
 section {
-    padding: 2rem 1rem;
+    padding: 4rem 1rem;
     text-align: center;
 }
 
-section#projects .project {
-    margin: 1rem 0;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-section#projects video {
-    max-width: 100%;
+#projects .project {
+    margin: 2rem 0;
+    text-align: left;
+}
+
+#projects video {
+    width: 100%;
     height: auto;
+    border: 1px solid #ddd;
 }
 
 footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
+    background: #f8f9fa;
     padding: 1rem 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    border-top: 1px solid #e7e7e7;
+    text-align: center;
+}
+
+footer .socials {
+    margin-top: 10px;
+}
+
+footer .socials a {
+    color: #333;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    text-decoration: none;
 }
