@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>My Portfolio</h1>
         <nav>
+            <div class="logo">My Portfolio</div>
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -17,40 +18,53 @@
             </ul>
         </nav>
     </header>
-    
+
     <section id="about">
-        <h2>About Me</h2>
-        <p>Short bio or introduction goes here.</p>
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Welcome to my portfolio! I am a passionate developer and designer.</p>
+        </div>
     </section>
 
     <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <video controls>
-                <source src="videos/project1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <p>Description of Project 1.</p>
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1</h3>
+                <video controls>
+                    <source src="videos/project1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Description of Project 1.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <video controls>
+                    <source src="videos/project2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Description of Project 2.</p>
+            </div>
+            <!-- Add more projects as needed -->
         </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <video controls>
-                <source src="videos/project2.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <p>Description of Project 2.</p>
-        </div>
-        <!-- Add more projects as needed -->
     </section>
 
     <section id="contact">
-        <h2>Contact</h2>
-        <p>Contact information or form goes here.</p>
+        <div class="container">
+            <h2>Contact</h2>
+            <p>You can reach me at <a href="mailto:example@example.com">example@example.com</a></p>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 My Portfolio</p>
+        <div class="container">
+            <p>&copy; 2024 My Portfolio</p>
+            <div class="socials">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
